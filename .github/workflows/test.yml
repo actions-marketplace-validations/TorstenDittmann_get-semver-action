@@ -11,10 +11,10 @@ jobs:
         with:
           version: '1.0.0-alpha.3'
       - name: Get Major
-        run: [[ "${{ steps.versions.outputs.major }}" == "1" ]]
+        run: if [[ "${{ steps.versions.outputs.major }}" == "1" ]]; then exit 0; else exit 1; fi
       - name: Get Minor
-        run: [[ "${{ steps.versions.outputs.major }}" == "1.0" ]]
+        run: if [[ "${{ steps.versions.outputs.minor }}" == "1.0" ]]; then exit 0; else exit 1; fi
       - name: Get Patch
-        run: [[ "${{ steps.versions.outputs.major }}" == "1.0.0" ]]
+        run: if [[ "${{ steps.versions.outputs.patch }}" == "1.0.0" ]]; then exit 0; else exit 1; fi
       - name: Get PreRelease
-        run: [[ "${{ steps.versions.outputs.major }}" == "1.0.0-alpha.3" ]]
+        run: if [[ "${{ steps.versions.outputs.prerelease }}" == "1.0.0-alpha.3" ]]; then exit 0; else exit 1; fi
