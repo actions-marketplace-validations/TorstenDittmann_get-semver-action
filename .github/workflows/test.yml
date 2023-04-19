@@ -11,10 +11,10 @@ jobs:
         with:
           version: '1.0.0-alpha.3'
       - name: Get Major
-        run: echo "${{ steps.hello.outputs.major }}"
+        run: echo "${{ steps.versions.outputs.major }}"
       - name: Get Minor
-        run: echo "${{ steps.hello.outputs.minor }}"
+        run: echo "${{ steps.versions.outputs.minor }}"
       - name: Get Patch
-        run: echo "${{ steps.hello.outputs.patch }}"
+        run: echo "${{ steps.versions.outputs.patch }}"
       - name: Get Pre-Release
-        run: echo "${{ steps.hello.outputs.pre-release }}"
+        run: echo "${{ steps.versions.outputs.pre-release }}"
