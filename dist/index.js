@@ -6015,16 +6015,14 @@ try {
         prerelease: (0,semver__WEBPACK_IMPORTED_MODULE_1__.prerelease)(version).join("."),
     }
 
-    console.log(versions);
-
     const versions = {
         major: parts.major,
         minor: `${parts.major}.${parts.minor}`,
         patch: `${parts.major}.${parts.minor}.${parts.patch}`,
         prerelease: `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
     }
-
-    ;(0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('major', versions.major);
+    console.log(versions);
+    (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('major', versions.major);
     (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('minor', versions.minor);
     (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('patch', versions.patch);
     (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('prerelease', versions.prerelease);

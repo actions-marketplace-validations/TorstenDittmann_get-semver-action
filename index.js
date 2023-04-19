@@ -15,15 +15,13 @@ try {
         prerelease: prerelease(version).join("."),
     }
 
-    console.log(versions);
-
     const versions = {
         major: parts.major,
         minor: `${parts.major}.${parts.minor}`,
         patch: `${parts.major}.${parts.minor}.${parts.patch}`,
         prerelease: `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
     }
-
+    console.log(versions);
     setOutput('major', versions.major);
     setOutput('minor', versions.minor);
     setOutput('patch', versions.patch);
