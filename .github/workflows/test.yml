@@ -16,5 +16,5 @@ jobs:
         run: echo "${{ steps.versions.outputs.minor }}"
       - name: Get Patch
         run: echo "${{ steps.versions.outputs.patch }}"
-      - name: Get Pre-Release
-        run: echo "${{ steps.versions.outputs.pre-release }}"
+      - name: Get PreRelease
+        run: echo "${{ steps.versions.outputs.prerelease }}"
