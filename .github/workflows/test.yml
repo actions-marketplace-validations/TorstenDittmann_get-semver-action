@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Get Versions
         id: versions
-        uses: torstendittmann/get-semver-action
+        uses: torstendittmann/get-semver-action@latest
         with:
           version: '1.0.0-alpha.3'
       - name: Get Major
