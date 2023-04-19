@@ -1,0 +1,18 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  version:  # id of input
+    description: 'Version'
+    required: true
+outputs:
+  major: # id of output
+    description: 'The Major version (1.0.0-alpha.3 => 1).'
+  minor: # id of output
+    description: 'The Minor version (1.0.0-alpha.3 => 1.0).'
+  patch: # id of output
+    description: 'The Patch version (1.0.0-alpha.3 => 1.0.0)'
+  pre-release: # id of output
+    description: 'The PreRelease version (1.0.0-alpha.3 => 1.0.0-alpha.3)'
+runs:
+  using: 'node16'
+  main: 'index.js'
