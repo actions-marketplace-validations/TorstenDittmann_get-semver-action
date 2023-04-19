@@ -19,7 +19,7 @@ try {
         major: parts.major,
         minor: `${parts.major}.${parts.minor}`,
         patch: `${parts.major}.${parts.minor}.${parts.patch}`,
-        "pre-release": `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
+        prerelease: `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
     }
     console.log(versions);
     setOutput('major', versions.major);

@@ -6019,7 +6019,7 @@ try {
         major: parts.major,
         minor: `${parts.major}.${parts.minor}`,
         patch: `${parts.major}.${parts.minor}.${parts.patch}`,
-        "pre-release": `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
+        prerelease: `${parts.major}.${parts.minor}.${parts.patch}-${parts.prerelease}`,
     }
     console.log(versions);
     (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput)('major', versions.major);
