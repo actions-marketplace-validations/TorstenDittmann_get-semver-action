@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Get Semver Action'
 description: 'Greet someone and record the time'
 inputs:
   version:  # id of input
